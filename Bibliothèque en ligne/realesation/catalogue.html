@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>📖 قائمة الكتب</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body onload="afficherCatalogue()">
+  <h1>📖 قائمة الكتب</h1>
+
+  <!-- barre de recherche -->
+  <input type="text" id="searchInput" placeholder="🔍 ابحث عن كتاب بعنوان..." oninput="rechercherLivre()">
+
+  <!-- bouton de tri -->
+  <button onclick="trierLivres()">↕️ ترتيب حسب العنوان</button>
+
+  <div id="catalogue" class="catalogue"></div>
+
+  <footer id="stats"></footer>
+  <div id="plusCher"></div>
+
+  <a href="ajouter-livre.html" class="btn">➕ إضافة كتاب</a>
+  <a href="index.html" class="btn">🏠 الصفحة الرئيسية</a>
+</body>
+</html>

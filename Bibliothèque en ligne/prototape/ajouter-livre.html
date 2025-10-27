@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>📘 إضافة كتاب جديد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>📘 إضافة كتاب جديد</h1>
+  </header>
+
+  <div class="actions">
+    <a href="catalogue.html">📚 عرض الفهرس</a>
+    <a href="statistiques.html">📊 الإحصائيات</a>
+  </div>
+
+  <form id="ajouterLivreForm">
+    <label>عنوان الكتاب:</label>
+    <input type="text" id="titre" required>
+
+    <label>اسم المؤلف:</label>
+    <input type="text" id="auteur" required>
+
+    <label>النوع:</label>
+    <select id="genre" required>
+      <option value="">-- اختر النوع --</option>
+      <option>رواية</option>
+      <option>علمي</option>
+      <option>تاريخي</option>
+      <option>تربوي</option>
+      <option>ديني</option>
+    </select>
+
+    <label>سنة النشر:</label>
+    <input type="number" id="annee" min="1800" max="2025" required>
+
+    <button type="submit">➕ إضافة الكتاب</button>
+  </form>
+
+  <footer>© 2025 مكتبة المدرسة — تصميم: Souhail</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>➕ إضافة كتاب</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>➕ إضافة كتاب جديد</h1>
+  <form id="formLivre">
+    <input type="number" id="code" placeholder="كود الكتاب" required>
+    <input type="text" id="titre" placeholder="عنوان الكتاب" required>
+    <input type="text" id="auteur" placeholder="اسم المؤلف" required>
+    <input type="number" id="annee" placeholder="سنة النشر" required>
+    <input type="number" id="prix" placeholder="السعر بالدرهم" required>
+    <label><input type="checkbox" id="disponible" checked> متوفر</label>
+    <button type="submit">إضافة</button>
+  </form>
+
+  <a href="catalogue.html" class="btn">📖 العودة للقائمة</a>
+  <a href="index.html" class="btn">🏠 الصفحة الرئيسية</a>
+</body>
+</html>
